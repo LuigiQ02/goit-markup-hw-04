@@ -141,14 +141,28 @@ img{
 
 /* Hero Section */
 .hero{
-    background-color: var(--navy);
+    position: relative;
+    background: var(--grey, rgba(46, 47, 66, 0.70));
     text-align: center;
 }
+
+.hero::before{
+    content: '';
+    background-image: url(../images/hero-img.jpg);
+    position: absolute;
+    inset: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.4;
+}
+  
 .hero__title{
     color: var(--white);
     font-size: 56px;
     line-height: 60px;
     letter-spacing: 1.12px;
+    isolation: isolate;
 }
 .hero__btn:hover{
     border-radius: 4px;
@@ -170,7 +184,10 @@ img{
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     cursor: pointer;
     font-family: inherit;
+    isolation: isolate;
 }
+
+
 /* First Section */
 
 .section{
@@ -271,6 +288,13 @@ img{
     line-height: 24px;
     letter-spacing: 0.32px;
 }
+/* Team Icons Section */
+.team__list__icons{
+    display: flex;
+    justify-content: center;
+    column-gap: 24px;
+}
+
 /* Customers Section */
 .section__customers{
     background-color: var(--white);
