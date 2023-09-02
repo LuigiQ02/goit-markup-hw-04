@@ -291,9 +291,33 @@ img{
 /* Team Icons Section */
 .team__list__icons{
     display: flex;
-    justify-content: center;
     column-gap: 24px;
 }
+
+.team__icon__link{
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--iris);
+    justify-content: center;
+    border-radius: 20px;
+    fill: var(--cloud);
+}
+
+
+.team__icon__link:hover{
+    background-color: var(--ocean);
+    fill: var(--cloud);
+}
+
+.team__icon__link svg{
+    height: 24px;
+    width: 24px;
+}
+
+
+
 
 /* Customers Section */
 .section__customers{
@@ -310,7 +334,6 @@ img{
 /* Footer Section */
 .footer{
     background-color: var(--navy);
-    height: 312px;
 }
 
 .footer__link{
@@ -346,7 +369,6 @@ img{
 }
 
 /* Buttons Section Portfolio */
-
 .btn{
     padding-top: 96px;
 }
