@@ -204,6 +204,12 @@ img{
     flex-direction: column;
     gap: 8px;
 }
+
+.features__image{
+    padding: 24px 100px;
+    background-color: var(--cloud);
+    border-radius: 4px;
+}
 .features__head{
     color: var(--navy);
     font-size: 20px;
@@ -334,6 +340,7 @@ img{
 /* Footer Section */
 .footer{
     background-color: var(--navy);
+    display: flex;
 }
 
 .footer__link{
