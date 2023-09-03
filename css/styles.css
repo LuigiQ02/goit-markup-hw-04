@@ -366,7 +366,7 @@ img{
 .footer{
     background-color: var(--navy);
     display: flex;
-    padding: 100.5px 0 100px 500px;
+    padding: 100.5px 0 100px 520px;
 }
 .section__footer__container {
     display: flex;
