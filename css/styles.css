@@ -67,11 +67,6 @@ img{
     justify-content: center;
 }
 
-.section__footer__container{
-    width: 1158px;
-    margin: 0 auto;
-    padding: 100px 0;
-}
 .nav{
     display: inline-flex;
     gap: 76px;
@@ -321,26 +316,73 @@ img{
     height: 24px;
     width: 24px;
 }
-
-
-
-
 /* Customers Section */
+
 .section__customers{
-    background-color: var(--white);
+    padding: 120px 0;
+}
+.section__customer__header{
+    color: var(--navybluemodal);
     text-align: center;
+    font-family: Roboto;
     font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
     line-height: 40px;
     letter-spacing: 0.72px;
-    text-transform: capitalize;
-    height: 440px;
-    margin-top: 120px;
 }
+.customer__list{
+    display: flex;
+    column-gap: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+.customer__items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 168px;
+    height: 88px;
+    border: 1px solid var(--lightslate);
+    border-radius: 4px;
+    margin-top: 72px;
+}
+.customer__items:hover{
+    border: 1px solid var(--ocean);
+}
+
+.customer__items:hover svg{
+    fill: var(--ocean);
+}
+.section__customer__link svg{
+    width: 104px;
+    height: 56px;
+    fill: var(--lightslate);
+}
+
 
 /* Footer Section */
 .footer{
     background-color: var(--navy);
     display: flex;
+    padding: 100.5px 0 100px 500px;
+}
+.section__footer__container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 120px;
+}
+
+.footer__icon__txt{
+    color: var(--WHITE, #FFF);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    margin-bottom: 16px;
 }
 
 .footer__link{
@@ -374,7 +416,36 @@ img{
     letter-spacing: 0.32px;
     margin-top: 17.5px;
 }
+.footer__icon__container{
+    display: flex;
+    flex-direction: column;
+}
+.footer__list__icons {
+    display: flex;
+    column-gap: 24px;
+}
 
+.footer__icon__link {
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--iris);
+    justify-content: center;
+    border-radius: 20px;
+    fill: var(--cloud);
+}
+
+
+.footer__icon__link:hover {
+    background-color: var(--ocean);
+    fill: var(--cloud);
+}
+
+.footer__icon__link svg {
+    height: 24px;
+    width: 24px;
+}
 /* Buttons Section Portfolio */
 .btn{
     padding-top: 96px;
