@@ -109,7 +109,7 @@ img{
     height: 4px;
     background-color: var(--ocean);
     border-radius: 2px;
-    bottom: -20px;
+    bottom: -28px;
     left: 0;
     width: 0;
 }
@@ -343,11 +343,8 @@ img{
 }
 
 .customer__container{
-    display: flex;
     margin: 0 auto;
     width: 1158px;
-    flex-direction: column;
-    
 }
 .section__customer__header{
     color: var(--navybluemodal);
@@ -541,6 +538,11 @@ img{
     flex-direction: column;
     gap: 8px;
     padding: 32px 16px;
+}
+
+.section__abt__items__details:hover{
+    cursor: pointer;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .section__abt__items{
